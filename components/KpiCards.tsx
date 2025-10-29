@@ -47,13 +47,13 @@ export const KpiCards = memo(function KpiCards({
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
-            {Math.min(daysCoverA, daysCoverB)} days
+            {Math.max(daysCoverA, daysCoverB)} days
           </div>
-          <div className="text-xs text-muted-foreground mt-1">
+          {/* <div className="text-xs text-muted-foreground mt-1">
             <span className="text-green-600 font-medium">A: {daysCoverA}d</span>
             {" | "}
             <span className="text-amber-600 font-medium">B: {daysCoverB}d</span>
-          </div>
+          </div> */}
         </CardContent>
       </Card>
 
